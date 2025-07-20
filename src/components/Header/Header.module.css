@@ -34,3 +34,14 @@
   gap: 3rem;
   margin-right: 10rem;
 }
+.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  pointer-events: auto;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}

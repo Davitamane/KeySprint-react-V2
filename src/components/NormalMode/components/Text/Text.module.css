@@ -1,0 +1,13 @@
+.game_text {
+  border: none;
+  font-family: inherit;
+  border-radius: 1rem;
+  width: 100%;
+  vertical-align: top;
+  resize: none;
+  color: #a6abad;
+  font-size: 2rem;
+  text-align: left;
+  user-select: none;
+  transition: all 0.5s;
+}

@@ -13,3 +13,26 @@
   gap: 2rem;
   margin-top: 2rem;
 }
+.btn {
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #f4fbfe;
+  transition: all 0.5s;
+  max-width: fit-content;
+}
+
+.reload {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn:hover {
+  outline: none;
+  color: #f6d672;
+}

@@ -1,0 +1,35 @@
+.btn {
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #f4fbfe;
+  transition: all 0.5s;
+  max-width: fit-content;
+}
+.settings_container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.btn-active {
+  color: var(--color-secondary) !important;
+}
+.btn:hover {
+  outline: none;
+  color: #f6d672;
+}
+  
+.game_info {
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #f4fbfe;
+  transition: all 0.5s;
+  max-width: fit-content;
+}
