@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  display: flex;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+.btn {
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #f4fbfe;
+  transition: all 0.5s;
+  max-width: fit-content;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn-smaller:hover {
+  outline: none;
+  color: #f6d672;
+}
+
+.ul_container {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-right: 10rem;
+}

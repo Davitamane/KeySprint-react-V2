@@ -1,0 +1,40 @@
+{
+  "sentences": {
+    "10_words": [
+      "The cat jumped over the fence and ran away.",
+      "She quickly packed her bag and left the house silently.",
+      "We danced under the stars until the sun came up.",
+      "He opened the door slowly, expecting something terrifying inside.",
+      "They watched the fireworks explode above the quiet city skyline.",
+      "The wind howled loudly, shaking the windows throughout the night.",
+      "She smiled gently, hiding the sadness behind her bright eyes.",
+      "He scribbled notes furiously before the exam finally began.",
+      "The coffee machine broke just before the morning rush started.",
+      "A dog barked loudly outside, waking everyone too early."
+    ],
+    "25_words": [
+      "The concert was incredible, with lights flashing and music blasting as thousands of people danced and sang along to every song like it was their last night alive.",
+      "She wandered through the foggy forest, each step crunching leaves beneath her feet as the silence grew heavier with every passing second, enveloping her completely in mystery.",
+      "We built the treehouse all summer long, hammering nails and sawing wood while laughing and dreaming of the epic adventures we’d have once it was finished.",
+      "The museum tour was fascinating, taking us from ancient Egypt to modern art, showing how humanity evolved through creativity, innovation, and the endless urge to express ourselves.",
+      "He wrote letters every day during the war, describing the cold nights, the distant gunfire, and his dreams of returning home to her warm embrace.",
+      "The storm rolled in suddenly, darkening the sky and rattling windows as thunder cracked, rain pelted the ground, and lightning lit up the neighborhood like a strobe light.",
+      "She spent the afternoon painting the beach scene, capturing the calm waves, the pink sky, and the distant boats floating peacefully as the sun set slowly.",
+      "Our science teacher surprised us with a lab experiment involving fire, vinegar, and balloons, creating colorful reactions that made everyone cheer, laugh, and want to learn more.",
+      "He waited on the train platform, nervous and hopeful, checking his watch repeatedly as the minutes dragged on, wondering if she would really come this time.",
+      "The parade marched through the town, filling the streets with music, dancing, confetti, and joy, uniting the community in a rare moment of pure celebration and togetherness."
+    ],
+    "50_words": [
+      "After years of struggling with self-doubt and anxiety, she finally stood confidently on stage, speaking to a crowd of hundreds, sharing her journey and inspiring others to embrace vulnerability, face their fears, and believe that even the most broken parts of us can become the foundation of something beautiful and strong.",
+      "The abandoned hospital still echoed with the memories of those who once walked its halls—nurses rushing with stretchers, doctors whispering diagnoses, patients dreaming of recovery—now reduced to silence, peeling paint, shattered glass, and dust-covered equipment left behind like forgotten relics of a different world that once pulsed with urgent life.",
+      "He woke before dawn each day, laced up his shoes, and ran through the city streets while it still slept, chasing not only fitness but peace, clarity, and a version of himself he’d always imagined—disciplined, calm, and unafraid to confront the pain that used to control him completely.",
+      "We stayed up all night on the rooftop, wrapped in blankets, drinking hot chocolate and talking about dreams, heartbreaks, and the strange feeling that life was about to change forever, watching the stars slowly fade as morning crept in and reality tugged us gently back toward the world below.",
+      "She clutched the locket in her hand as the train pulled away, trying to memorize the last glimpse of his face, the shape of his smile, knowing that goodbye wasn’t just a word—it was the start of a new chapter she never wanted to write, filled with absence and memory.",
+      "The classroom buzzed with excitement as the students prepared their science fair projects, showing off volcanoes, solar systems, robots, and experiments with such joy and pride that even the strictest teacher couldn’t help but smile, reminded of how powerful curiosity is when it’s nurtured and allowed to run free.",
+      "As the final whistle blew, the entire stadium erupted into cheers, players collapsed on the field in disbelief, and the underdog team, counted out by everyone, lifted the championship trophy high, tears streaming down their faces as they proved that heart, grit, and unity could conquer even the biggest odds.",
+      "On the night of the blackout, neighbors came out of their homes, candles in hand, sharing food, stories, and laughter, rediscovering connection in a world that usually keeps people separated by screens, schedules, and walls—reminding everyone that sometimes the darkest nights bring out the brightest moments of human warmth.",
+      "He spent years coding his passion project, facing bug after bug, learning languages, rebuilding features, and constantly doubting himself—until the day it launched, and thousands signed up, validating the belief that if you chase something relentlessly with love and purpose, eventually the world starts to pay attention.",
+      "She used to hate the rain, but today she danced in it, spinning under the gray clouds, soaked and smiling, because after everything she had been through, she realized the storm didn’t mean she was drowning—it meant she had survived, and the water no longer held power over her."
+    ]
+  }
+}

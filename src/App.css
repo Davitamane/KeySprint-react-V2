@@ -1,42 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+:root {
+  --color-main: #191818;
+  --color-secondary: #f2c230;
+  --color-neutral: #f4fbfe;
+  --color-neutral-darker: #a6abad;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #f4fbfe;
+  transition: all 0.5s;
+  max-width: fit-content;
+  font-weight: 800;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  color: var(--color-neutral);
+  background-color: var(--color-main);
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
 }
 
-.card {
-  padding: 2em;
+.active {
+  color: var(--color-secondary) !important;
 }
-
-.read-the-docs {
-  color: #888;
+a:hover {
+  outline: none;
+  color: #f6d672;
 }
