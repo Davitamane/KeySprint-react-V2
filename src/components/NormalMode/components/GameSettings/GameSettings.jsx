@@ -15,7 +15,6 @@ function GameSettings({ state }) {
         <>
           <div className={styles.game_info}>
             Time: <span className="yello">4s</span>
-            Time: <span className="yello">4s</span>
           </div>
         </>
       )}
