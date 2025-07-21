@@ -1,0 +1,50 @@
+.game_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  gap: 3rem;
+}
+.settings_container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.game_info {
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #f4fbfe;
+  transition: all 0.5s;
+  max-width: fit-content;
+}
+.yello {
+  color: var(--color-secondary);
+}
+.btn {
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #f4fbfe;
+  transition: all 0.5s;
+  max-width: fit-content;
+}
+
+.reload {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn:hover {
+  outline: none;
+  color: #f6d672;
+}
