@@ -22,7 +22,7 @@
   outline: none;
   color: #f6d672;
 }
-  
+
 .game_info {
   border: none;
   background: none;
@@ -32,4 +32,7 @@
   color: #f4fbfe;
   transition: all 0.5s;
   max-width: fit-content;
+}
+.yello {
+  color: var(--color-secondary);
 }

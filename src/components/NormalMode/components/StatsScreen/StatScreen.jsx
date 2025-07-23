@@ -1,16 +1,16 @@
 import styles from "./StatScreen.module.css";
 import reload from "../../../../images/reload.svg";
 
-function StatScreen({ dispatch }) {
+function StatScreen({ dispatch, mistakeCount, time }) {
   return (
     <div className={styles.game_container}>
       <h2>Congratulations! blah blah blah idk what to say here</h2>
       <div className={styles.settings_container}>
         <div className={styles.game_info}>
-          Time: <span className={styles.yello}>5s</span>
+          Time: <span className={styles.yello}>{time}s</span>
         </div>
         <div className={styles.game_info}>
-          Mistakes: <span className={styles.yello}>4</span>
+          Mistakes: <span className={styles.yello}>{mistakeCount}</span>
         </div>
         <div className={styles.game_info}>
           WPM: <span className={styles.yello}>72</span>

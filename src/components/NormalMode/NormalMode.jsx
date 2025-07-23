@@ -8,10 +8,13 @@ import StatScreen from "./components/StatsScreen/StatScreen";
 
 const initialState = {
   gameStatus: "initial",
-  givenText: "test test",
+  givenText: " failed to get data from api",
   typedText: "",
   stringLength: 10,
   data: [],
+  mistakeCount: 0,
+  time: 0,
+  punctuation: false,
 };
 
 function reducer(state, action) {
@@ -42,6 +45,15 @@ function reducer(state, action) {
     case "getData":
       return { ...state, data: action.payload };
 
+    case "punctuation": {
+      
+      const cleaned = state.givenText.replace(/[^\w\s]|_/g, "");
+      return { ...state, givenText: cleaned, punctuation: !state.punctuation };
+    }
+
+    case "incMistake":
+      return { ...state, mistakeCount: state.mistakeCount + 1 };
+
     case "changeLength": {
       const random = Math.floor(Math.random() * 10);
       const currArray = state.data[`${action.payload}_words`];
@@ -52,6 +64,11 @@ function reducer(state, action) {
         givenText: currArray[random],
       };
     }
+    case "increment_time":
+      return {
+        ...state,
+        time: state.time + 1,
+      };
 
     default:
       return state;
@@ -71,7 +88,7 @@ function NormalMode({ setGameRunning }) {
       const randomText = currArray[random];
 
       dispatch({
-        type: "keyPressed", 
+        type: "keyPressed",
       });
       dispatch({
         type: "restart",
@@ -112,16 +129,34 @@ function NormalMode({ setGameRunning }) {
     };
   }, [state, setGameRunning]);
 
+  useEffect(() => {
+    if (!(state.gameStatus === "gameOn")) return;
+
+    const timer = setInterval(() => {
+      dispatch({ type: "increment_time" });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [state.gameStatus]);
+
   return (
     <div className={styles.game_container}>
       {state.gameStatus === "gameOver" ? (
-        <StatScreen dispatch={dispatch} />
+        <StatScreen
+          dispatch={dispatch}
+          mistakeCount={state.mistakeCount}
+          time={state.time}
+        />
       ) : (
         <>
-          <GameSettings state={state} dispatch={dispatch} />
+          <GameSettings state={state} dispatch={dispatch} time={state.time} />
           <div className={styles.text_container}>
             <Info state={state} />
-            <Text givenText={state.givenText} typedText={state.typedText} />
+            <Text
+              givenText={state.givenText}
+              typedText={state.typedText}
+              dispatch={dispatch}
+            />
           </div>
           <button
             className={`${styles.btn} ${styles.reload}`}

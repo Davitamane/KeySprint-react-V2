@@ -19,3 +19,7 @@
   color: crimson;
   transition: all 0.5s;
 }
+.idle {
+  color: #a6abad;
+  transition: all 0.5s;
+}

@@ -1,11 +1,16 @@
 import styles from "./GameSettings.module.css";
 
-function GameSettings({ state, dispatch }) {
+function GameSettings({ state, dispatch, time }) {
   return (
     <div className={styles.settings_container}>
       {state.gameStatus === "initial" && (
         <>
-          <button className={styles.btn}>Punctuation</button>
+          <button
+            className={`${styles.btn} ${state.punctuation ? "active" : ""}`}
+            onClick={() => dispatch({ type: "punctuation" })}
+          >
+            Punctuation
+          </button>
           <button
             className={`${styles.btn} ${
               state.stringLength === 10 ? "active" : ""
@@ -35,7 +40,7 @@ function GameSettings({ state, dispatch }) {
       {state.gameStatus === "gameOn" && (
         <>
           <div className={styles.game_info}>
-            Time: <span className="yello">4s</span>
+            Time: <span className={styles.yello}>{time}s</span>
           </div>
         </>
       )}
