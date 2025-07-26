@@ -1,11 +1,17 @@
 import { useEffect } from "react";
 import styles from "./Text.module.css";
+import { useGameState } from "../../contexts/StateContext";
 
-function Text({ givenText, typedText, dispatch }) {
+function Text() {
+  const { givenText, typedText, dispatch, loading } = useGameState();
+
   useEffect(() => {
-    if (typedText[typedText.length - 1] !== givenText[typedText.length - 1])
+    const lastIndex = typedText.length - 1;
+    if (typedText[lastIndex] !== givenText[lastIndex]) {
       dispatch({ type: "incMistake" });
-  }, [givenText, typedText, dispatch]);
+    }
+  }, [typedText, givenText, dispatch, loading]);
+
   return (
     <div className={styles.game_text}>
       {givenText &&

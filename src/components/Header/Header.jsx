@@ -2,8 +2,11 @@ import logo from "../../images/Logo.svg";
 import logoDark from "../../images/Logo-darkMode.svg";
 import styles from "./Header.module.css";
 import { NavLink } from "react-router-dom";
+import { useGameState } from "../NormalMode/contexts/StateContext";
 
-export default function Header({ gameRunning }) {
+export default function Header() {
+  const { gameRunning } = useGameState();
+
   return (
     <header className={styles.header}>
       <img src={gameRunning ? logoDark : logo} alt="logo" />

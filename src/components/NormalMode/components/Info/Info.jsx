@@ -1,6 +1,8 @@
+import { useGameState } from "../../contexts/StateContext";
 import styles from "./Info.module.css";
 
-function Info({ state }) {
+function Info() {
+  const { state } = useGameState();
   return (
     <div
       className={`${styles.info} ${

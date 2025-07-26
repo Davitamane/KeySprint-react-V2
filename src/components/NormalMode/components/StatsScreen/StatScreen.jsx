@@ -1,7 +1,9 @@
 import styles from "./StatScreen.module.css";
 import reload from "../../../../images/reload.svg";
+import { useGameState } from "../../contexts/StateContext";
 
-function StatScreen({ dispatch, mistakeCount, time }) {
+function StatScreen() {
+  const { dispatch, mistakeCount, time } = useGameState();
   return (
     <div className={styles.game_container}>
       <h2>Congratulations! blah blah blah idk what to say here</h2>

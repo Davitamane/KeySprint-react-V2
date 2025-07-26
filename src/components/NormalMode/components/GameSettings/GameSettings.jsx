@@ -1,6 +1,8 @@
+import { useGameState } from "../../contexts/StateContext";
 import styles from "./GameSettings.module.css";
 
-function GameSettings({ state, dispatch, time }) {
+function GameSettings() {
+  const { state, dispatch, time } = useGameState();
   return (
     <div className={styles.settings_container}>
       {state.gameStatus === "initial" && (
