@@ -13,8 +13,6 @@ Task Manager is a Laravel-powered application featuring a clean, intuitive dashb
 - [Prerequisites](#prerequisites)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
-- [Running Unit tests](#running-unit-tests)
-- [Development](#development)
 - [Deployment](#deployment)
 - [Resources](#resources)
 - [Developer Notes / Special Logic](#developer-notes--special-logic)
