@@ -1,4 +1,6 @@
-# React + Vite
+<div style="display:flex; align-items: center">
+  <h1 style="position:relative; top: -6px" >Task Manager App</h1>
+</div>
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.asdasdasdasdasd
 
