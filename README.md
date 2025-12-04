@@ -10,13 +10,22 @@ Task Manager is a Laravel-powered application featuring a clean, intuitive dashb
 
 ### Table of Contents
 
--   [Prerequisites](#prerequisites)
--   [Tech Stack](#tech-stack)
--   [Getting Started](#getting-started)
--   [Migrations](#migration)
--   [Development](#development)
--   [Deployment with CI / CD](#deployment-with-ci--cd)
--   [Project Structure](#project-structure)
--   [Service Interaction Map](#service-interaction-map)
--   [Server Infrastructure](#server-infrastructure)
--   [Database Backups](#database-backups)
+- [Prerequisites](#prerequisites)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Migrations](#migration)
+- [Development](#development)
+- [Deployment with CI / CD](#deployment-with-ci--cd)
+- [Project Structure](#project-structure)
+- [Service Interaction Map](#service-interaction-map)
+- [Server Infrastructure](#server-infrastructure)
+- [Database Backups](#database-backups)
+
+#
+
+### Prerequisites
+
+*PHP@8.4 and up*
+_MYSQL@8 and up_
+_npm@6 and up_
+_composer@2 and up_
