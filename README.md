@@ -56,7 +56,7 @@ Task Manager is a Laravel-powered application featuring a clean, intuitive dashb
 
 ### Getting Started
 
-1\. First of all you need to clone E Space repository from github:
+1\. First of all you need to clone Task manager repository from github:
 
 ```sh
 git clone https://github.com/RedberryInternship/dato-hizanishvili-task-manager.git
@@ -114,13 +114,13 @@ And now you should provide **.env** file all the necessary environment variables
 
 Which runs migrations.
 
-5\. Link storage (for task covers or user images) :
+5\. Link storage :
 
 ```sh
   php artisan storage:link
 ```
 
-Which runs migrations.
+for task covers or user images.
 
 #
 
@@ -145,3 +145,65 @@ As mentioned above, when working on JS you may run:
 ```sh
   npm run dev
 ```
+
+#
+
+### Deployment
+
+1\. SSH into your server:
+
+```sh
+ssh user@server
+```
+
+2\. Pull the latest changes:
+
+```sh
+git pull origin main
+```
+
+3\. Install server dependencies:
+
+```sh
+composer install
+```
+
+4\. Run migrations:
+
+```sh
+php artisan migrate
+```
+
+5\. Build production assets:
+
+```sh
+npm install
+npm run build
+```
+
+6\. Clear & optimize:
+
+```sh
+php artisan optimize
+```
+
+7\. Reload services (nginx / php-fpm):
+
+```sh
+sudo systemctl reload nginx
+sudo systemctl restart php8.x-fpm
+```
+
+#
+
+### Resources
+
+- **Database Diagram (DrawSQL):**  
+  https://drawsql.app/teams/davitamane/diagrams/task-manager
+
+- **Production URL:**  
+  http://task-manager.dato-khizanishvili.redberryinternship.ge/
+
+### Developer Notes / Special Logic
+
+> The project uses standard Laravel structure. No special conventions.
