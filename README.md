@@ -25,7 +25,9 @@ Task Manager is a Laravel-powered application featuring a clean, intuitive dashb
 
 ### Prerequisites
 
-*PHP@8.4 and up*
-_MYSQL@8 and up_
-_npm@6 and up_
-_composer@2 and up_
+### Prerequisites
+
+![PHP](https://img.shields.io/badge/PHP-%3E%3D%208.4-blue)
+![MySQL](https://img.shields.io/badge/MySQL-%3E%3D%208.0-orange)
+![Composer](https://img.shields.io/badge/Composer-%3E%3D%202.x-purple)
+![Node](https://img.shields.io/badge/Node-%3E%3D%2018-green)
